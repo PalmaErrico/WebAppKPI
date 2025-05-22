@@ -61,13 +61,13 @@ This web app is an application for monitoring and comparing the performance of t
 
 4. Style and Design (style.css):
 
- - Responsive design
-  
--  Grid layout for metrics
-  
- - Cards for organizing information
-  
- - Font Awesome icons for enhanced user experience
+    - Responsive design
+     
+   -  Grid layout for metrics
+     
+    - Cards for organizing information
+     
+    - Font Awesome icons for enhanced user experience
 
 5. API Functionality:
 
