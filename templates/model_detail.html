@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Details - {{ model.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ model.name }}</h1>
+            <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
+        </div>
 
+        <div class="model-info card">
+            <h2>Model Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Type:</strong> {{ model.type }}
+                </div>
+                <div class="info-item">
+                    <strong>Description:</strong> {{ model.description }}
+                </div>
+            </div>
+        </div>
+
+        <div class="kpi-details card">
+            <h2>Performance Metrics</h2>
+            <div class="kpi-grid">
+                <div class="kpi-item">
+                    <i class="fas fa-bullseye kpi-icon"></i>
+                    <div class="kpi-value">{{ "%.2f"|format(model.kpi.accuracy * 100) }}%</div>
+                    <div>Accuracy</div>
+                </div>
+                <div class="kpi-item">
+                    <i class="fas fa-exclamation-triangle kpi-icon"></i>
+                    <div class="kpi-value">{{ "%.2f"|format(model.kpi.loss) }}</div>
+                    <div>Loss</div>
+                </div>
+                <div class="kpi-item">
+                    <i class="fas fa-clock kpi-icon"></i>
+                    <div class="kpi-value">{{ model.kpi.execution_time }}s</div>
+                    <div>Execution Time</div>
+                </div>
+                <div class="kpi-item">
+                    <i class="fas fa-memory kpi-icon"></i>
+                    <div class="kpi-value">{{ model.kpi.memory_usage }}MB</div>
+                    <div>Memory Usage</div>
+                </div>
+                <div class="kpi-item">
+                    <i class="fas fa-microchip kpi-icon"></i>
+                    <div class="kpi-value">{{ model.kpi.instruction_count }}</div>
+                    <div>Instruction Count</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
