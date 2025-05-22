@@ -61,20 +61,20 @@ This web app is an application for monitoring and comparing the performance of t
 
 4. Style and Design (style.css):
 
-    - Responsive design
-     
-   -  Grid layout for metrics
-     
-    - Cards for organizing information
-     
-    - Font Awesome icons for enhanced user experience
+ - Responsive design
+  
+-  Grid layout for metrics
+  
+ - Cards for organizing information
+  
+ - Font Awesome icons for enhanced user experience
 
 5. API Functionality:
 
-   - Endpoints to retrieve model data
-    
-   - Endpoints to update model metrics
-    
-   - Data management through JSON files
+- Endpoints to retrieve model data
+ 
+- Endpoints to update model metrics
+ 
+- Data management through JSON files
 
 The application is designed to provide a clear and comparative view of the performance of the two machine learning approaches (centralized vs. federated) on the MNIST dataset, with a particular focus on visualizing key performance metrics.
