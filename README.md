@@ -7,7 +7,7 @@ This web app is an application for monitoring and comparing the performance of t
     
    - Frontend: HTML, CSS, and JavaScript with Chart.js for visualization
     
-   - Data Management: JSON files used to store KPI metrics
+   - Data Management: Structured data stored directly in the backend
 
 2.Main Pages:
 
@@ -61,7 +61,7 @@ This web app is an application for monitoring and comparing the performance of t
 
 4. Style and Design (style.css):
 
- - Responsive design
+ - Responsive design to adapt to different screen sizes
   
 -  Grid layout for metrics
   
@@ -71,10 +71,10 @@ This web app is an application for monitoring and comparing the performance of t
 
 5. API Functionality:
 
-- Endpoints to retrieve model data
+- Endpoints to retrieve model data (/api/models)
  
-- Endpoints to update model metrics
+- Endpoints to update model metrics (/api/update_model)
  
-- Data management through JSON files
+- Data managed in memory for optimal performance
 
 The application is designed to provide a clear and comparative view of the performance of the two machine learning approaches (centralized vs. federated) on the MNIST dataset, with a particular focus on visualizing key performance metrics.
